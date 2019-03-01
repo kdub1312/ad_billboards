@@ -101,7 +101,7 @@ function display_billboard($billboardName) {
     
 }
 
-
+/*display related posts*/
 function display_related_posts() {
     $currentID = get_the_ID();
     $tags = wp_get_post_terms( $currentID );
