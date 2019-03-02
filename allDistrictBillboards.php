@@ -8,7 +8,17 @@
    Author URI: http://alldistrict.net
    License: GPL2
    */
-
+/*
+TODO:
+*Create Dependency on ACF
+*Create ACF fields from within this plugin
+    *Conditionally load ACF from within plugin IF ACF has not already been loaded
+    *https://www.advancedcustomfields.com/resources/including-acf-in-a-plugin-theme/
+    *https://www.billerickson.net/advanced-custom-fields-frontend-dependency/
+    *https://www.smashingmagazine.com/2016/04/three-approaches-to-adding-configurable-fields-to-your-plugin/#approach-3-integrating-acf-advanced-custom-fields-into-your-plugin
+*Add ability to call in billboards via shortcode
+*Since this will be an instance of ACF separate from the main, will may need separate admin page for config of custom fields
+*/
 function create_billboard_post_type() {
   register_post_type( 'ad_billboards',
     array(
