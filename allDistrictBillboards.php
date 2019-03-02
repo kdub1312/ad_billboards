@@ -28,7 +28,7 @@ function enqueue_billboard_styles() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_billboard_styles');
 
-
+//display the billboard (another test comment)
 function display_billboard($billboardName) {
 //  echo 'This is my billboard';
     ?>
